@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Rahul Sharma",
+    "email": "rahul@example.com",
+    "role": "Frontend Developer"
+  },
+  {
+    "id": 2,
+    "name": "Priya Singh",
+    "email": "priya@example.com",
+    "role": "Backend Developer"
+  },
+  {
+    "id": 3,
+    "name": "Amit Patel",
+    "email": "amit@example.com",
+    "role": "Full Stack Developer"
+  }
+]
