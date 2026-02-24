@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import UserContext from '../store/UserContext';
+import ThemeContext from '../store/ThemeContext';
 
 function Profile() {
-  const { user, profiles, loading } = useContext(UserContext);
+    const { user, profiles, loading } = useContext(UserContext);
+    const { theme } = useContext(ThemeContext);
   return (
     <div>
       {!user ? null : <h2>Name is:- {user.userName}</h2>}
@@ -17,7 +19,7 @@ function Profile() {
         profiles.map((profile) => (
           <div
             key={profile.id}
-            style={{
+            style={{ 
               border: '1px solid #ccc',
               padding: '10px',
               margin: '10px 0',
@@ -28,8 +30,13 @@ function Profile() {
             <p>Email: {profile.email}</p>
             <p>Role: {profile.role}</p>
           </div>
+          
         ))
-      )}
+    
+          )}
+          <div>
+              <p>You are in {theme}.</p>
+          </div>
     </div>
   );
 }
